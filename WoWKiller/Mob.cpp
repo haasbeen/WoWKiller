@@ -1,0 +1,19 @@
+#include "Mob.h"
+
+//mobs(maybe different types like : slime, goblin, ogre, dragon(rare))
+/*attributes of a mob:
+- crit chance
+- miss chance
+- max health
+- current health
+- base damage*/
+
+Mob::Mob() {
+	current_health = 100;
+	max_health = 100;
+	base_damage = 5;
+
+};
+
+
+

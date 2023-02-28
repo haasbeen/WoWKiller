@@ -45,13 +45,21 @@ x   x x x x x x x x
 
 #include <iostream>
 #include <string>
+#include "Mob.h"
+#include "Player.h"
+
 using namespace std;
-
-
 
 
 int main()
 {
+	Player player;
+	Mob mob;
+
+	cout << mob.current_health << endl;
+	player.attack(mob);
+	cout << mob.current_health << endl;
+	cout << "Down goes mob" << endl;
 
 }
 
