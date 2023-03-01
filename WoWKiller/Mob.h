@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <string>
+#include "Actor.h"
 using namespace std;
 
 //mobs(maybe different types like : slime, goblin, ogre, dragon(rare))
@@ -12,12 +13,10 @@ using namespace std;
 - current health
 - base damage*/
 
-class Mob
+class Mob : public Actor
 {
 public:
-	int current_health;
-	int max_health;
-	int base_damage;
+
 
 	Mob();
 

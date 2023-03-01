@@ -12,6 +12,8 @@ Mob::Mob() {
 	current_health = 100;
 	max_health = 100;
 	base_damage = 5;
+	crit_chance = 10.0;
+	crit_damage = base_damage * 2;
 
 };
 

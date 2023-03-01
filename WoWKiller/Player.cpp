@@ -12,9 +12,13 @@ Player::Player() {
 	current_health = 250;
 	max_health = 250;
 	base_damage = 100;
+	crit_chance = 100.0;
+	crit_damage = base_damage * 2;
 
 };
 
-void Player::attack(Mob &mob) {
-	mob.current_health = mob.current_health - base_damage;
-};
+void Player::attack(Actor& actor) {
+	Actor::attack(actor);
+	cout << "United States of Smash" << endl;
+}
+

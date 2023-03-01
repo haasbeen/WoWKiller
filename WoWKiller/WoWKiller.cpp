@@ -47,6 +47,8 @@ x   x x x x x x x x
 #include <string>
 #include "Mob.h"
 #include "Player.h"
+#include "Battle.h"
+
 
 using namespace std;
 
@@ -55,10 +57,11 @@ int main()
 {
 	Player player;
 	Mob mob;
+	Battle battle(player, mob);
 
+	battle.start();
 	cout << mob.current_health << endl;
-	player.attack(mob);
-	cout << mob.current_health << endl;
+	
 	cout << "Down goes mob" << endl;
 
 }

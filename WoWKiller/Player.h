@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <string>
-#include "Mob.h"
+#include "Actor.h"
 
 using namespace std;
 
@@ -14,16 +14,13 @@ using namespace std;
 - current health
 - base damage*/
 
-class Player
+class Player : public Actor
 {
 public:
-	int current_health;
-	int max_health;
-	int base_damage;
 
 	Player();
 		
-	void attack(Mob &mob);
+	void attack(Actor& actor);
 	
 
 
