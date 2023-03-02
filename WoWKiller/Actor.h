@@ -16,5 +16,9 @@ public:
 
 	void attack(Actor &actor);
 
+	bool is_dead();
+
+	bool is_alive();
+
 };
 

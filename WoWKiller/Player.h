@@ -19,8 +19,7 @@ class Player : public Actor
 public:
 
 	Player();
-		
-	void attack(Actor& actor);
+
 	
 
 

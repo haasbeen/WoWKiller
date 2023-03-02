@@ -60,9 +60,6 @@ int main()
 	Battle battle(player, mob);
 
 	battle.start();
-	cout << mob.current_health << endl;
-	
-	cout << "Down goes mob" << endl;
 
 }
 

@@ -11,11 +11,13 @@ class Battle {
 
 public:
 	
-	Player *player;
-	Mob *mob;
+	Player* player;
+	Mob* mob;
 
 	Battle(Player& player, Mob& mob);
 
 	void start();
+
+	void print_state();
 
 };
