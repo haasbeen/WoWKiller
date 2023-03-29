@@ -12,7 +12,7 @@ Player::Player() {
 	current_health = 1000;
 	max_health = 1000;
 	base_damage = 100;
-	crit_chance = 100.0;
+	crit_chance = 10.0;
 	crit_damage = base_damage * 2;
 
 };

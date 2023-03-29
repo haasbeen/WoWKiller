@@ -48,18 +48,20 @@ x   x x x x x x x x
 #include "Mob.h"
 #include "Player.h"
 #include "Battle.h"
-
+#include "util.h"
 
 using namespace std;
 
 
 int main()
 {
+	util::init_rng();
 	Player player;
 	Mob mob;
 	Battle battle(player, mob);
 
 	battle.start();
+
 
 }
 
