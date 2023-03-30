@@ -131,12 +131,14 @@
     <ClCompile Include="Battle.cpp" />
     <ClCompile Include="Mob.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Dungeon.cpp" />
     <ClCompile Include="util.cpp" />
     <ClCompile Include="WoWKiller.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Actor.h" />
     <ClInclude Include="Battle.h" />
+    <ClInclude Include="Dungeon.h" />
     <ClInclude Include="Mob.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="util.h" />
