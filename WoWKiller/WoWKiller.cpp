@@ -56,6 +56,8 @@ using namespace std;
 int main()
 {
 	util::init_rng();
+
+
 	Player player;
 	Mob mob;
 	Battle battle(player, mob);

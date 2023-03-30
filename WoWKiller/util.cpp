@@ -10,7 +10,7 @@ namespace util {
 	}
 	bool rng(int percent) {
 		
-		int v2 = rand();
-		return false;
+		int zero_100 = rand() % 101;
+		return percent >= zero_100;
 	}
 }

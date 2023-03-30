@@ -3,5 +3,5 @@
 
 namespace util {
 	void init_rng();
-	bool rng(float percent);
+	bool rng(int percent);
 }
