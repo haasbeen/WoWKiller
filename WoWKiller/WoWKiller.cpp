@@ -49,6 +49,7 @@ x   x x x x x x x x
 #include "Player.h"
 #include "Battle.h"
 #include "util.h"
+#include "Dungeon.h"
 
 using namespace std;
 
@@ -60,6 +61,8 @@ int main()
 
 	Player player;
 	Mob mob;
+	Dungeon silithus;
+	silithus.generate();
 	Battle battle(player, mob);
 
 	battle.start();
