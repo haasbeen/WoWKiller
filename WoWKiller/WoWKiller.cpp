@@ -45,11 +45,10 @@ x   x x x x x x x x
 
 #include <iostream>
 #include <string>
-#include "Mob.h"
-#include "Player.h"
-#include "Battle.h"
+#include "Game.h"
 #include "util.h"
-#include "Dungeon.h"
+
+
 
 using namespace std;
 
@@ -57,16 +56,8 @@ using namespace std;
 int main()
 {
 	util::init_rng();
-
-
-	Player player;
-	Mob mob;
-	Dungeon silithus;
-	silithus.generate();
-	Battle battle(player, mob);
-
-	battle.start();
-
+	Game game;
+	game.run();
 
 }
 

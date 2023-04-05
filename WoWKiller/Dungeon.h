@@ -8,11 +8,14 @@ class Dungeon {
 
 public:
 
-	Dungeon();
-
 	vector<vector<Square>> map;
+	int player_x;
+	int player_y;
+
+	Dungeon();
 
 	void generate();
 
+	Square player_location();
 
 };

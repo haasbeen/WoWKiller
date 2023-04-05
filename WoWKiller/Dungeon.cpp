@@ -6,6 +6,9 @@ Dungeon::Dungeon() {
 };
 
 void Dungeon::generate() {
+	player_x = 0;
+	player_y = 0;
+
 	for (int row_index = 0; row_index < 10; row_index++) {
 		vector<Square> row;
 		for (int column_index = 0; column_index < 10; column_index++) {
@@ -27,7 +30,9 @@ void Dungeon::generate() {
 		}
 		map.push_back(row);
 	}
-
-
 };
+
+Square Dungeon::player_location() {
+	return map[player_x][player_y];
+}
 
